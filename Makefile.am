@@ -60,8 +60,8 @@ DEFS					=
 
 
 # automake targets
-bin_PROGRAMS				= src/akcom-udpecho \
-					  src/akcom-udpechod
+bin_PROGRAMS				= src/akcom-udpecho
+sbin_PROGRAMS				= src/akcom-udpechod
 check_PROGRAMS				=
 doc_DATA				=
 noinst_DATA				=
@@ -87,6 +87,7 @@ XFAIL_TESTS				=
 EXTRA_MANS				=
 EXTRA_DIST				= $(noinst_HEADERS) \
 					  akcom-udpecho.spec \
+					  akcom-udpechod.service \
 					  docs/akcom-udpecho.1.in \
 					  docs/akcom-udpechod.8.in \
 					  docs/TR-143.pdf \

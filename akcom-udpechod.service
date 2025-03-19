@@ -5,7 +5,7 @@ After=network.target network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/akcom-udpechod --echoplus --foreground
+ExecStart=/usr/sbin/akcom-udpechod --echoplus --foreground
 
 [Install]
 WantedBy=multi-user.target
