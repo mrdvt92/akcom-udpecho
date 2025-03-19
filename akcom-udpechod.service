@@ -1,0 +1,11 @@
+[Unit]
+Description=Alaska Communications UDP Echo Tools
+Requires=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/akcom-udpechod --echoplus --foreground
+
+[Install]
+WantedBy=multi-user.target
